@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { initBooks } from '../../redux/bookSlice';
+import { useSelector } from 'react-redux';
 
-const BooksList = ({ books }) => {
+const BooksList = () => {
+	const books = useSelector((state) => state.books.books);
 	const dispatch = useDispatch();
 
 	useEffect(() => {

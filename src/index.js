@@ -3,12 +3,26 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import store from './store';
 import { Provider } from 'react-redux';
+import BooksList from './components/books-list/books-list';
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { CartPage, ErrorPage } from './components/pages';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <App />,
+		errorElement: <ErrorPage />,
+		children: [
+			{
+				path: '/',
+				element: <BooksList />,
+			},
+			{
+				path: 'cart',
+				element: <CartPage />,
+			},
+		],
 	},
 ]);
 
