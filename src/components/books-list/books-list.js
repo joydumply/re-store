@@ -1,21 +1,3 @@
-// import React, { Component, useEffect } from 'react';
-
-// export default class BooksList extends Component {
-// 	componentDidMound() {
-// 		const initBookObject = [
-// 			{
-// 				id: 0,
-// 				name: 'О Дивный Новый Мир',
-// 				author: 'Олдос хаксли',
-// 			},
-// 		];
-// 	}
-// 	render() {
-// 		const { books } = this.props;
-// 		return <div>{books}</div>;
-// 	}
-// }
-
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { initBooks } from '../../redux/bookSlice';
