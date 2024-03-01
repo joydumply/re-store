@@ -1,21 +1,12 @@
 import './App.css';
+import { useSelector } from 'react-redux';
+import BooksList from './components/books-list/books-list';
 
 function App() {
+	const books = useSelector((state) => state.books.books);
 	return (
 		<div className="App">
-			<header className="App-header">
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
+			<BooksList books={books} />
 		</div>
 	);
 }
