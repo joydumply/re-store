@@ -10,12 +10,15 @@ This will be a Book Store project
 
 -   [ ] Add Book to the Store
 -   [ ] Remove Book from the Store
+-   [ ] Implement Book Card Component
 
 ## What is done
 
 -   [x] BookList Component
 -   [x] BookSlice
 -   [x] Initial Store
+-   [x] Add Material-UI
+-   [x] Implement Route
 
 ## Changelog
 
@@ -24,6 +27,9 @@ This will be a Book Store project
 -   Implemented BooksList Component
 -   Added initBooks action to the booksSlice
 -   Shown inited books in BooksList Component
+-   Installed Material UI
+-   Added AppBar component to the header
+-   Implemented simple Router
 
 ### 29.02.2024
 
